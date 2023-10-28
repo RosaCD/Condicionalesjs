@@ -71,11 +71,46 @@
 //     console.log("Tu numero es impar");
 // }
 
-let numero1 = prompt("Escribre un número");
-let numero2 = prompt("Escribre otro número");
-if (numero1 !=0 && numero2 !=0) {
-    let resultado = numero1/numero2;
-    console.log(resultado);
-} else {
-    console.log("Error");
+// let numero1 = prompt("Escribre un número");
+// let numero2 = prompt("Escribre otro número");
+// if (numero1 !=0 && numero2 !=0) {
+//     let resultado = numero1/numero2;
+//     console.log(resultado);
+// } else {
+//     console.log("Error");
+// }
+
+function Subir() {
+    let oper= Number(document.getElementById("Operacion").value);
+    switch (oper) {
+        case 1:
+            let numero1 = prompt ("Escribe un numero");
+            let numero2 = prompt ("Escribe otro numero");
+            let resultado = Number(numero1)+ Number(numero2);
+            document.write ("El resultado de la suma de " + numero1 + "+" + numero2 + " es " + resultado);
+            break;
+            case 2:
+            let numero3 = prompt("Escribe un numero");
+            let numero4 = prompt("Escribe otro numero");
+            let resultado1 = numero3 - numero4;
+            document.write ("El resultado de la suma de " + numero3 + "-" + numero4 + " es " + resultado1);
+            break;
+            case 3:
+            let numero5 = prompt("Escribe un numero");
+            let numero6 = prompt("Escribe otro numero");
+            let resultado2 = numero5 * numero6;
+            document.write ("El resultado de la suma de " + numero5 + "*" + numero6 + " es " + resultado2);
+            break;
+            case 4:
+            let numero7 = prompt("Escribe un numero");
+            let numero8 = prompt("Escribe otro numero");
+            let resultado3 = numero7 / numero8;
+            document.write ("El resultado de la suma de " + numero7 + "/" + numero8 + " es " + resultado3);
+            break;
+        default: 
+        document.write ("Elige una operacion valida");
+            break;
+    }
+    
 }
+
